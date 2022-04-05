@@ -26,10 +26,14 @@ struct ToDo {
 
 extension ToDo: DocumentSerializable {
     init?(dictionary: [String : Any]) {
-        guard let content = dictionary["content"] as? String,
-              let timestamp = dictionary["timestamp"] as? Date else {return nil}
         
-        self.init(content: content, timeStamp: timestamp)
+        
+        guard let content = dictionary["content"] as? String,
+        let stamp = dictionary["timeStamp"] as? Timestamp else {
+                  print("ERRORRR")
+                  return nil}
+        
+        self.init(content: content, timeStamp: stamp.dateValue())
         
     }
     
