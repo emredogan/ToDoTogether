@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		135F6D4F0A1AF1F9B0EF43AB /* Pods_ToDoTogetherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9144E51A022B6F1777DBB854 /* Pods_ToDoTogetherTests.framework */; };
 		40C88E416C541501A25E9554 /* Pods_ToDoTogether_ToDoTogetherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4B579E272A7A1A595F1956 /* Pods_ToDoTogether_ToDoTogetherUITests.framework */; };
+		63828A8227FF600A00D6662A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63828A8127FF600A00D6662A /* GoogleService-Info.plist */; };
+		63D7B96327FF91F7005D00D1 /* GoogleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7B96227FF91F7005D00D1 /* GoogleLoginViewController.swift */; };
 		63EEB1AB27FB960D0044D4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1AA27FB960D0044D4B0 /* AppDelegate.swift */; };
 		63EEB1AD27FB960D0044D4B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1AC27FB960D0044D4B0 /* SceneDelegate.swift */; };
 		63EEB1AF27FB960D0044D4B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1AE27FB960D0044D4B0 /* ViewController.swift */; };
@@ -18,7 +20,6 @@
 		63EEB1C227FB96100044D4B0 /* ToDoTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1C127FB96100044D4B0 /* ToDoTogetherTests.swift */; };
 		63EEB1CC27FB96100044D4B0 /* ToDoTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1CB27FB96100044D4B0 /* ToDoTogetherUITests.swift */; };
 		63EEB1CE27FB96100044D4B0 /* ToDoTogetherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1CD27FB96100044D4B0 /* ToDoTogetherUITestsLaunchTests.swift */; };
-		63EEB1DB27FB98820044D4B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63EEB1DA27FB98820044D4B0 /* GoogleService-Info.plist */; };
 		63EEB1DD27FBA2260044D4B0 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEB1DC27FBA2260044D4B0 /* ToDo.swift */; };
 		B4981809AE4CCC22857EA0A7 /* Pods_ToDoTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E9A97C7C940CF27364CAA8 /* Pods_ToDoTogether.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,8 @@
 		20FB0063F7D4CFD16C95D3F9 /* Pods-ToDoTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTogether.debug.xcconfig"; path = "Target Support Files/Pods-ToDoTogether/Pods-ToDoTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		38E9A97C7C940CF27364CAA8 /* Pods_ToDoTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4A8AF83AA87F5AAE896391 /* Pods-ToDoTogetherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTogetherTests.release.xcconfig"; path = "Target Support Files/Pods-ToDoTogetherTests/Pods-ToDoTogetherTests.release.xcconfig"; sourceTree = "<group>"; };
+		63828A8127FF600A00D6662A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63D7B96227FF91F7005D00D1 /* GoogleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewController.swift; sourceTree = "<group>"; };
 		63EEB1A727FB960D0044D4B0 /* ToDoTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EEB1AA27FB960D0044D4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EEB1AC27FB960D0044D4B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +60,6 @@
 		63EEB1C727FB96100044D4B0 /* ToDoTogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTogetherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EEB1CB27FB96100044D4B0 /* ToDoTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTogetherUITests.swift; sourceTree = "<group>"; };
 		63EEB1CD27FB96100044D4B0 /* ToDoTogetherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTogetherUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		63EEB1DA27FB98820044D4B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63EEB1DC27FBA2260044D4B0 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		8375BF90223F231CC154F1DB /* Pods-ToDoTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoTogether.release.xcconfig"; path = "Target Support Files/Pods-ToDoTogether/Pods-ToDoTogether.release.xcconfig"; sourceTree = "<group>"; };
 		9144E51A022B6F1777DBB854 /* Pods_ToDoTogetherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoTogetherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,9 +127,10 @@
 				63EEB1AE27FB960D0044D4B0 /* ViewController.swift */,
 				63EEB1B027FB960D0044D4B0 /* Main.storyboard */,
 				63EEB1B327FB96100044D4B0 /* Assets.xcassets */,
+				63D7B96227FF91F7005D00D1 /* GoogleLoginViewController.swift */,
 				63EEB1B527FB96100044D4B0 /* LaunchScreen.storyboard */,
 				63EEB1B827FB96100044D4B0 /* Info.plist */,
-				63EEB1DA27FB98820044D4B0 /* GoogleService-Info.plist */,
+				63828A8127FF600A00D6662A /* GoogleService-Info.plist */,
 				63EEB1DC27FBA2260044D4B0 /* ToDo.swift */,
 			);
 			path = ToDoTogether;
@@ -282,10 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63828A8227FF600A00D6662A /* GoogleService-Info.plist in Resources */,
 				63EEB1B727FB96100044D4B0 /* LaunchScreen.storyboard in Resources */,
 				63EEB1B427FB96100044D4B0 /* Assets.xcassets in Resources */,
 				63EEB1B227FB960D0044D4B0 /* Main.storyboard in Resources */,
-				63EEB1DB27FB98820044D4B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63EEB1AF27FB960D0044D4B0 /* ViewController.swift in Sources */,
+				63D7B96327FF91F7005D00D1 /* GoogleLoginViewController.swift in Sources */,
 				63EEB1AB27FB960D0044D4B0 /* AppDelegate.swift in Sources */,
 				63EEB1AD27FB960D0044D4B0 /* SceneDelegate.swift in Sources */,
 				63EEB1DD27FBA2260044D4B0 /* ToDo.swift in Sources */,
@@ -523,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -578,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

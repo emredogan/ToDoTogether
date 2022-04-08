@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import GoogleSignIn
 
 class ViewController: UITableViewController {
     
@@ -21,6 +22,11 @@ class ViewController: UITableViewController {
         loadData()
         checkForUpdates()
         
+    }
+    @IBAction func signOut(_ sender: UIBarButtonItem) {
+        GIDSignIn.sharedInstance.signOut()
+        _ = navigationController?.popToRootViewController(animated: true)
+
     }
     
     func loadData() {

@@ -10,6 +10,8 @@ target 'ToDoTogether' do
 # For example, to use Firebase Authentication and Cloud Firestore
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'Firebase/Core'
+pod 'GoogleSignIn'
 
   target 'ToDoTogetherTests' do
     inherit! :search_paths

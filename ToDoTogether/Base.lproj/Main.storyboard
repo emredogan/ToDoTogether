@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--To Do Together-->
         <scene sceneID="xnA-Qq-VyP">
             <objects>
-                <tableViewController id="4Uz-cM-eRM" customClass="ViewController" customModule="ToDoTogether" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ViewController" id="4Uz-cM-eRM" customClass="ViewController" customModule="ToDoTogether" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="moA-Wt-HeK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,9 +32,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To Do Together" id="7Z6-31-n4z">
-                        <barButtonItem key="rightBarButtonItem" title="Add" image="highlighter" catalog="system" id="okh-qj-8XW">
+                        <barButtonItem key="leftBarButtonItem" title="Add" image="highlighter" catalog="system" id="okh-qj-8XW">
                             <connections>
                                 <action selector="composeToDo:" destination="4Uz-cM-eRM" id="Gmd-A7-mZv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="rectangle.portrait.and.arrow.right" catalog="system" id="ung-bZ-xDh">
+                            <connections>
+                                <action selector="signOut:" destination="4Uz-cM-eRM" id="sE0-Cq-D9u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -43,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuB-Xq-6cl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="190"/>
+            <point key="canvasLocation" x="1523" y="190"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NvC-Gp-zN2">
@@ -54,16 +60,47 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4Uz-cM-eRM" kind="relationship" relationship="rootViewController" id="gGP-RM-IOb"/>
+                        <segue destination="Pg5-N2-eYn" kind="relationship" relationship="rootViewController" id="LnK-vq-39I"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5e-MD-o0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="190"/>
+            <point key="canvasLocation" x="-187" y="190"/>
+        </scene>
+        <!--Google Login View Controller-->
+        <scene sceneID="QCV-SS-fZH">
+            <objects>
+                <viewController id="Pg5-N2-eYn" customClass="GoogleLoginViewController" customModule="ToDoTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EdW-N8-Bxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-K5-Hsc" customClass="GIDSignInButton">
+                                <rect key="frame" x="70" y="318" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <action selector="googleTapped:" destination="Pg5-N2-eYn" eventType="valueChanged" id="kfH-3c-ih0"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UrQ-ZQ-nWP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HNh-si-VUV"/>
+                    <connections>
+                        <outlet property="loginButton" destination="wcG-K5-Hsc" id="Chl-qI-z6e"/>
+                        <segue destination="4Uz-cM-eRM" kind="show" identifier="SegueToMain" id="cX4-Nv-Oyw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxG-dv-Bst" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="183"/>
         </scene>
     </scenes>
     <resources>
         <image name="highlighter" catalog="system" width="128" height="119"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
